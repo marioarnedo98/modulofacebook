@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Modulo de Facebook</name>
+    <author>Emesa</author>
+    <version>1.0.0</version>
+    <description>Modulo de facebook que se muestra en tu Joomla, para obtener el codigo de la app de facebook tendras que ir a https://developers.facebook.com/ y crear tu propia app, simplemente
+    le pones un nombre y una direccion de correo y seguidamente en la parte superior tendras tu codigo de aplicacion.</description>
+    <files>
+        <filename>mod_esfacebook.xml</filename>
+        <scriptfile>script.php</scriptfile>
+        <filename module="mod_esfacebook">mod_esfacebook.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>    
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                    name="id_app"
+                    type="text"
+                    label="Inserta el codigo de la app de Facebook"                   
+                    />
+                <field 
+                    name="url"
+                    type="url"
+                    label="Inserta la URL de tu pagina de Facebook"
+                    />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
+
+
+
